@@ -85,6 +85,11 @@
             var h=date.getHours(); //获取小时
             var m=date.getMinutes(); //获取分钟
             var s=date.getSeconds(); //获取秒
+            if(parseInt(mon) < 10) mon='0'+mon;
+            if(parseInt(da) < 10) da='0'+da;
+            if(parseInt(h) < 10) h='0'+h;
+            if(parseInt(m) < 10) m='0'+m;
+            if(parseInt(s) < 10) s='0'+s;
             $("#time").text(year + '-' + mon + '-' + da + " " + h + ":" + m + ":" + s);
 		</script>
 	
